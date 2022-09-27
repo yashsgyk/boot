@@ -15,7 +15,6 @@ public class EmployeeController {
 		return "list of employees from db";
 	}
 	
-	//Adding comments
 	@GetMapping("/employee/{id}")
 	public String getEmployee(@PathParam("id") Long id) {
 		System.out.println("Getting employees with id");
