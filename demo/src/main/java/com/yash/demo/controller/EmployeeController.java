@@ -1,5 +1,7 @@
 package com.yash.demo.controller;
 
+import javax.websocket.server.PathParam;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,5 +13,12 @@ public class EmployeeController {
 		System.out.println("Getting list of employees");
 		return "list of employees";
 	}
+	
+	@GetMapping("/employee/{id}")
+	public String getEmployee(@PathParam("id") Long id) {
+		System.out.println("Getting employees with id");
+		return "employee with id";
+	}
+	
 
 }
