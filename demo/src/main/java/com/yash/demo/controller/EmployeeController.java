@@ -12,7 +12,11 @@ public class EmployeeController {
 	@GetMapping("/employee")
 	public String getEmployees() {
 		System.out.println("Getting list of employees");
+<<<<<<< HEAD
+		System.out.println("Adding something");
+=======
 		System.out.println("Adding");
+>>>>>>> 1ddd0706bb99328eac26fe737c243146daab8dac
 		return "list of employees from db";
 	}
 	
